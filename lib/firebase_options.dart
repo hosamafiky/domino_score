@@ -56,10 +56,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCJ5FgW9LgIekp7d8Z_4XlO_wX3cyAOut8',
-    appId: '1:579345861080:ios:b419a4065cc386eff30aad',
+    appId: '1:579345861080:ios:78384b525c2ac174f30aad',
     messagingSenderId: '579345861080',
     projectId: 'new-domino-tracker',
     storageBucket: 'new-domino-tracker.firebasestorage.app',
     iosBundleId: 'com.flutter.aait.dominoscore',
   );
+
 }
