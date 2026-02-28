@@ -1,1 +1,35 @@
-{"firestore":{"rules":"firestore.rules"},"functions":{"source":"functions","predeploy":["npm --prefix \"$RESOURCE_DIR\" run build"]},"flutter":{"platforms":{"android":{"default":{"projectId":"new-domino-tracker","appId":"1:579345861080:android:e807eed6f0c641d5f30aad","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"new-domino-tracker","appId":"1:579345861080:ios:78384b525c2ac174f30aad","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"new-domino-tracker","configurations":{"android":"1:579345861080:android:e807eed6f0c641d5f30aad","ios":"1:579345861080:ios:78384b525c2ac174f30aad"}}}}}}
+{
+  "firestore": { "rules": "firestore.rules" },
+  "functions": {
+    "source": "functions",
+    "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run build"]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "new-domino-tracker",
+          "appId": "1:579345861080:android:4a09d7be98fac200f30aad",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "new-domino-tracker",
+          "appId": "1:579345861080:ios:78384b525c2ac174f30aad",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "new-domino-tracker",
+          "configurations": {
+            "android": "1:579345861080:android:4a09d7be98fac200f30aad",
+            "ios": "1:579345861080:ios:78384b525c2ac174f30aad"
+          }
+        }
+      }
+    }
+  }
+}

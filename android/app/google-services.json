@@ -28,6 +28,25 @@
       "client_info": {
         "mobilesdk_app_id": "1:579345861080:android:e807eed6f0c641d5f30aad",
         "android_client_info": {
+          "package_name": "com.example.domino_score"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzxECiSKVHjR8AcYrjRGfQRjEhAi76IOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579345861080:android:4a09d7be98fac200f30aad",
+        "android_client_info": {
           "package_name": "com.flutter.aait.dominoscore"
         }
       },

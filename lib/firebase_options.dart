@@ -48,7 +48,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAzxECiSKVHjR8AcYrjRGfQRjEhAi76IOM',
-    appId: '1:579345861080:android:e807eed6f0c641d5f30aad',
+    appId: '1:579345861080:android:4a09d7be98fac200f30aad',
     messagingSenderId: '579345861080',
     projectId: 'new-domino-tracker',
     storageBucket: 'new-domino-tracker.firebasestorage.app',
