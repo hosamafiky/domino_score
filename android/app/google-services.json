@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "579345861080",
+    "project_id": "new-domino-tracker",
+    "storage_bucket": "new-domino-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579345861080:android:ef3e4cc2c652ea19f30aad",
+        "android_client_info": {
+          "package_name": "com.domino.domino_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzxECiSKVHjR8AcYrjRGfQRjEhAi76IOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579345861080:android:e807eed6f0c641d5f30aad",
+        "android_client_info": {
+          "package_name": "com.example.domino_score"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzxECiSKVHjR8AcYrjRGfQRjEhAi76IOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
