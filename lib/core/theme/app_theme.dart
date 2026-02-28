@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static ThemeData light(Brightness brightness) {
+  static ThemeData light() {
     return ThemeData(
       useMaterial3: true,
-      brightness: brightness,
+      brightness: Brightness.light,
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFF1B5E20),
-        brightness: brightness,
+        brightness: Brightness.light,
         primary: const Color(0xFF2E7D32),
         secondary: const Color(0xFF66BB6A),
       ),
@@ -17,13 +17,13 @@ class AppTheme {
     );
   }
 
-  static ThemeData dark(Brightness brightness) {
+  static ThemeData dark() {
     return ThemeData(
       useMaterial3: true,
-      brightness: brightness,
+      brightness: Brightness.dark,
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFF2E7D32),
-        brightness: brightness,
+        brightness: Brightness.dark,
         primary: const Color(0xFF66BB6A),
         secondary: const Color(0xFF81C784),
       ),
