@@ -42,7 +42,7 @@ lib/
 1. **Create a Firebase project** at [Firebase Console](https://console.firebase.google.com).
 
 2. **Register the app**
-   - Add an Android app (package name e.g. `com.example.domino_score`).
+   - Add an Android app (package name e.g. `com.flutter.aait.dominoscore`).
    - Add an iOS app (bundle ID).
 
 3. **Download config files**

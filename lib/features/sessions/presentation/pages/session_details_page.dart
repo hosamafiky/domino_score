@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:domino_score/core/di/injection.dart' as di;
 import 'package:domino_score/core/localization/app_localizations.dart';
 import 'package:domino_score/core/widgets/error_view.dart';
@@ -35,14 +37,12 @@ class _SessionDetailsView extends StatelessWidget {
     return Directionality(
       textDirection: l10n.isRTL ? TextDirection.rtl : TextDirection.ltr,
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(l10n.sessionsTitle),
-          leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () => context.pop()),
-        ),
+        appBar: AppBar(title: Text(l10n.sessionsTitle)),
         body: BlocBuilder<SessionDetailsCubit, SessionDetailsState>(
           builder: (context, state) {
             if (state is SessionDetailsLoading) return const LoadingWidget();
             if (state is SessionDetailsError) {
+              log(state.message);
               return ErrorView(message: state.message);
             }
             if (state is SessionDetailsSuccess) {

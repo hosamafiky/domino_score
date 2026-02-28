@@ -1,4 +1,5 @@
 import 'package:domino_score/core/di/injection.dart';
+import 'package:domino_score/core/locale/locale_cubit.dart';
 import 'package:domino_score/core/localization/app_localizations.dart';
 import 'package:domino_score/core/widgets/error_view.dart';
 import 'package:domino_score/core/widgets/loading_widget.dart';
@@ -94,6 +95,19 @@ class _SettingsView extends StatelessWidget {
                     onChanged: (v) => context.read<SettingsCubit>().updateSettings(notificationsSessionReminders: v),
                   ),
                   const Divider(),
+                  Text(l10n.language, style: Theme.of(context).textTheme.titleMedium),
+                  BlocBuilder<LocaleCubit, Locale?>(
+                    builder: (context, locale) {
+                      final current = locale ?? AppLocalizations.defaultLocale;
+                      final label = current.languageCode == 'ar' ? l10n.languageArabic : l10n.languageEnglish;
+                      return ListTile(
+                        title: Text(label),
+                        trailing: const Icon(Icons.arrow_drop_down),
+                        onTap: () => _showLanguagePicker(context),
+                      );
+                    },
+                  ),
+                  const Divider(),
                   ListTile(
                     title: Text(l10n.seedSampleData),
                     trailing: FilledButton(onPressed: () => _seedData(context), child: Text(l10n.seedSampleData)),
@@ -114,5 +128,33 @@ class _SettingsView extends StatelessWidget {
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l10n.seedSampleDataDone)));
     }
+  }
+
+  void _showLanguagePicker(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    showModalBottomSheet<void>(
+      context: context,
+      builder: (context) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              title: Text(l10n.languageArabic),
+              onTap: () {
+                context.read<LocaleCubit>().setLocale(const Locale('ar'));
+                Navigator.of(context).pop();
+              },
+            ),
+            ListTile(
+              title: Text(l10n.languageEnglish),
+              onTap: () {
+                context.read<LocaleCubit>().setLocale(const Locale('en'));
+                Navigator.of(context).pop();
+              },
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -44,6 +44,7 @@ import 'package:domino_score/features/teams/domain/repositories/teams_repository
 import 'package:domino_score/features/teams/domain/usecases/add_team.dart';
 import 'package:domino_score/features/teams/domain/usecases/get_teams.dart';
 import 'package:domino_score/features/teams/presentation/cubit/teams_cubit.dart';
+import 'package:domino_score/core/locale/locale_cubit.dart';
 import 'package:domino_score/firebase/firebase_init.dart';
 import 'package:domino_score/firebase/firestore_refs.dart';
 import 'package:domino_score/firebase/messaging_service.dart';
@@ -55,6 +56,7 @@ final GetIt sl = GetIt.instance;
 Future<void> initDependencies() async {
   final prefs = await SharedPreferences.getInstance();
   sl.registerLazySingleton<SharedPreferences>(() => prefs);
+  sl.registerLazySingleton<LocaleCubit>(() => LocaleCubit(sl()));
 
   await initFirebase();
   sl.registerLazySingleton<MessagingService>(() => MessagingService(sl()));

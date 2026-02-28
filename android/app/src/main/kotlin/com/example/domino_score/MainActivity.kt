@@ -1,4 +1,4 @@
-package com.example.domino_score
+package com.flutter.aait.dominoscore
 
 import io.flutter.embedding.android.FlutterActivity
 

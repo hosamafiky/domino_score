@@ -91,6 +91,8 @@ class AppLocalizations {
   String get notificationsSessionReminders => _localizedValues[locale.languageCode]!['notificationsSessionReminders']!;
   String get theme => _localizedValues[locale.languageCode]!['theme']!;
   String get language => _localizedValues[locale.languageCode]!['language']!;
+  String get languageArabic => _localizedValues[locale.languageCode]!['languageArabic']!;
+  String get languageEnglish => _localizedValues[locale.languageCode]!['languageEnglish']!;
   String get seedSampleData => _localizedValues[locale.languageCode]!['seedSampleData']!;
   String get seedSampleDataDone => _localizedValues[locale.languageCode]!['seedSampleDataDone']!;
 
@@ -157,6 +159,8 @@ class AppLocalizations {
       'notificationsSessionReminders': 'تذكير الجلسات',
       'theme': 'المظهر',
       'language': 'اللغة',
+      'languageArabic': 'العربية',
+      'languageEnglish': 'English',
       'seedSampleData': 'إضافة بيانات تجريبية',
       'seedSampleDataDone': 'تمت إضافة البيانات التجريبية',
     },
@@ -222,6 +226,8 @@ class AppLocalizations {
       'notificationsSessionReminders': 'Session reminders',
       'theme': 'Theme',
       'language': 'Language',
+      'languageArabic': 'العربية',
+      'languageEnglish': 'English',
       'seedSampleData': 'Seed sample data',
       'seedSampleDataDone': 'Sample data seeded',
     },

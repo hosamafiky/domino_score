@@ -28,7 +28,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:579345861080:android:e807eed6f0c641d5f30aad",
         "android_client_info": {
-          "package_name": "com.example.domino_score"
+          "package_name": "com.flutter.aait.dominoscore"
         }
       },
       "oauth_client": [],
